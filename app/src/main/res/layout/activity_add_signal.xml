@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neveau Signalement"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="definir une photo"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/sample_image"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            />
+
+        <EditText
+            android:id="@+id/titreInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Titre"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/descriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción"
+            android:layout_marginBottom="12dp"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Catégorie"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <Spinner
+            android:id="@+id/spiner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="23dp"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/Affiche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type!"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp" />
+        <Button
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="localisation"
+            style="@style/OrangeButton"/>
+
+
+        <Button
+            android:id="@+id/sendbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENVOYER"
+            style="@style/OrangeButton"/>
+    </LinearLayout>
+</ScrollView>

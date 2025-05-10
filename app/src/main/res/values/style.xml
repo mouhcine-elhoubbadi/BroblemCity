@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- Base application theme -->
+        <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+            <item name="colorPrimary">#FFA43A</item> <!-- Orange vif -->
+            <item name="colorPrimaryVariant">#FF7F00</item> <!-- Variante plus foncée -->
+            <item name="colorOnPrimary">#FFFFFF</item>
+            <item name="colorSecondary">#00C2D1</item> <!-- Bleu clair pour fond de connexion -->
+            <item name="colorOnSecondary">#FFFFFF</item>
+            <item name="android:fontFamily">@font/roboto</item>
+            <item name="android:buttonStyle">@style/OrangeButton</item>
+            <item name="android:editTextStyle">@style/EditTextStyle</item>
+        </style>
+
+        <!-- Style pour les boutons orange -->
+        <style name="OrangeButton" parent="Widget.MaterialComponents.Button">
+            <item name="backgroundTint">#FFA43A</item>
+            <item name="android:textColor">#FFFFFF</item>
+            <item name="cornerRadius">8dp</item>
+        </style>
+
+        <!-- Style pour les champs de texte -->
+        <style name="EditTextStyle" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+            <item name="boxStrokeColor">#CCCCCC</item>
+            <item name="boxBackgroundColor">#FFFFFF</item>
+            <item name="android:textColor">#000000</item>
+            <item name="hintTextColor">#999999</item>
+        </style>
+
+        <!-- Style pour la page de connexion -->
+        <style name="LoginContainer">
+            <item name="android:background">#00C2D1</item>
+        </style>
+
+        <!-- Style pour la page d'accueil (map) -->
+        <style name="MapContainer">
+            <item name="android:background">#FFF5DC</item> <!-- Beige très clair -->
+        </style>
+
+        <!-- Style pour la page d’ajout -->
+        <style name="AddPageContainer">
+            <item name="android:background">#FFFFFF</item>
+        </style>
+
+    </resources>
+

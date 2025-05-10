@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bluebackground">
+
+    <ImageView
+        android:id="@+id/profileAvatar"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/user_avatar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mohamed"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mohamed@email.com"
+        android:textColor="#888888"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:text="🕒  Mes signalements"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:text="❤️  Favoris"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:text="👤  Compte"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:text="🚪  Déconnexion"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:textColor="#D32F2F" />
+    </LinearLayout>
+</LinearLayout>

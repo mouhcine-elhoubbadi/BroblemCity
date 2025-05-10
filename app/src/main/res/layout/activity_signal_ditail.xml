@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/signalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="POTHOLE"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/signalDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25 avr. 2024"
+            android:textColor="#999999"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/signalImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bluebackground"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_corners" />
+
+        <TextView
+
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:text="DESCRIPTION"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/signalDescription"
+            android:text="A large pothole on the street. Needs to be filled in."
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <TextView
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:text="TYPE DE PROBLEME"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <ImageView
+
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_road"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/category"
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:text="Voirie"
+                android:textColor="#FF9800" />
+        </LinearLayout>
+        <TextView
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:text="LCALISATION"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:layout_height="35dp"
+            android:layout_width="match_parent"
+            android:id="@+id/location"
+            android:text="SAFI"
+            android:padding="6dp"
+            android:background="@drawable/status_background"
+            android:textColor="#00838F"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:text="STATUT"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:layout_height="35dp"
+            android:layout_width="match_parent"
+            android:id="@+id/signalStatus"
+            android:text="Envoyé"
+            android:padding="6dp"
+            android:background="@drawable/status_background"
+            android:textColor="#00838F"
+            android:layout_marginBottom="24dp" />
+
+        <ImageButton
+            android:id="@+id/retour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/flesh_retour"
+            android:backgroundTint="#FF5733"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
