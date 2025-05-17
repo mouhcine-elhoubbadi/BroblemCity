@@ -4,20 +4,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/dynamic3"
+    android:layout_marginTop="25dp">
 
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="?attr/colorButtonNormal"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
 
@@ -25,14 +28,44 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <Button
+        <TextView
+            android:id="@+id/welcomeText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button"
-            android:text="go to admin page"
-            android:layout_marginTop="300dp"/>
+            android:text="Bienvenue sur notre application de signalement.\n\nSignalez facilement les problèmes rencontrés dans votre ville et contribuez à améliorer votre environnement."
+            android:textAlignment="center"
+            android:padding="24dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_background"
+           />
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnNav"
+            android:layout_below="@+id/toolBar"
+            />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btnNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@color/witheMix"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/nav_menu"
+            android:layout_marginTop="470dp"/>
+
+
+
+
     </LinearLayout>
+
+
     </LinearLayout>
+
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -40,4 +73,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:menu="@menu/activity_main_drawer" />
+
+
+
 </androidx.drawerlayout.widget.DrawerLayout>

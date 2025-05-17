@@ -66,6 +66,10 @@
             android:name=".Signal_ditail_Activity"
             android:exported="false" />
         <activity
+            android:name=".SplashScreenActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
